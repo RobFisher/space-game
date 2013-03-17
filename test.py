@@ -1,4 +1,4 @@
-# Space Game is a hacker-ish space adventure game by Rob Fisher.
+from gridsquare import GridSquare
 
-if __name__ == '__main__':
-    print 'Welcome to Space Game.'
+gs = GridSquare(0, 0)
+gs.info()
