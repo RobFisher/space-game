@@ -1,0 +1,16 @@
+Space Game
+==========
+
+I want to make a space simulation game with exploration, trading and possibly
+combat, rather like Elite. But I can't do graphics and I am somewhat inspired
+by the early days of hacking text games like Adventure. So that's what this
+is.
+
+Feature ideas
+-------------
+
+* Procedurally generated galaxy.
+* Trading simulation.
+* Some kind of online multi-player.
+* Combat?
+* Smartphone UI?
