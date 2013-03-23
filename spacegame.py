@@ -4,7 +4,7 @@ __author__ = 'rob'
 # Space Game is a hacker-ish space adventure game by Rob Fisher.
 
 import cmd
-from gridsquare import GridSquare
+import gridsquare
 
 
 class SpaceGameCommandInterpreter(cmd.Cmd):
@@ -21,11 +21,12 @@ class SpaceGameCommandInterpreter(cmd.Cmd):
             args = line.split(',')
             x = int(args[0])
             y = int(args[1])
-        except ValueError, AttributeError:
-            print 'Try typing: gs 18, 7'
+        except (ValueError, AttributeError):
+            print 'Try typing: gs ' + str(gridsquare.civilisation_centre_x) + ', ' + str(
+                gridsquare.civilisation_centre_y)
             return
 
-        gs = GridSquare(x, y)
+        gs = gridsquare.GridSquare(x, y)
         gs.info()
 
     def do_EOF(self, line):
